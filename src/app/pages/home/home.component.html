@@ -1,0 +1,24 @@
+<nav>
+  <ul>
+    <li routerLink="answer" class="link">Don't know the answer? Find it here</li>
+  </ul>
+</nav>
+<header>
+  <div>
+    <h1>What a game!</h1>
+    <h3>Answer to the question below to get exclusive access to the <strong style="color: rgb(250, 185, 23); font-weight: bold; font-size: 26px;">secret</strong> of this application!</h3>
+  </div>
+</header>
+<section>
+  <div>
+    <h3><button class="get-answer" (click)="getAnswer()">Click</button> to get the Question</h3>
+    <h2>{{getAnswer()}}</h2>
+  <div class="input-button">
+    <app-input class="input" type="text" (valueChange)="setAnswer($event)"></app-input>
+    <button (click)="tryAnswer">Try</button>
+  </div>
+  </div>
+</section>
+<footer>
+  <h6>Powered by: Giovanni Cristian Marrocco</h6>
+</footer>
