@@ -1,5 +1,7 @@
 export interface IQuestions {
-  id: number;
+  IQuestions: IQuestions[];
+  category: string;
+  id: string;
+  correctAnswer: string;
   question: string;
-  answer: string;
 }
