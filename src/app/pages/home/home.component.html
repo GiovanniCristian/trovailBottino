@@ -11,11 +11,11 @@
 </header>
 <section>
   <div>
-    <h3><button class="get-answer" (click)="getAnswer()">Click</button> to get the Question</h3>
-    <h2>{{getAnswer()}}</h2>
+    <h3><button class="get-answer" (click)="getQuestion()">Click</button> to get the Question</h3>
+    <h2>{{getQuestion}}</h2>
   <div class="input-button">
-    <app-input class="input" type="text" (valueChange)="setAnswer($event)"></app-input>
-    <button (click)="tryAnswer">Try</button>
+    <app-input class="input" type="text"></app-input>
+    <button>Try</button>
   </div>
   </div>
 </section>
