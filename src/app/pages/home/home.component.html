@@ -4,19 +4,28 @@
   </ul>
 </nav>
 <header>
-  <div>
-    <h1>What a game!</h1>
-    <h3>Answer to the question below to get exclusive access to the <strong style="color: rgb(250, 185, 23); font-weight: bold; font-size: 26px;">secret</strong> of this application!</h3>
+  <div class="container">
+    <div class="header-text">
+      <h1>What a game!</h1>
+      <h3>Answer to the question below to get exclusive access to the <strong
+          style="color: rgb(250, 185, 23); font-weight: bold; font-size: 26px; border-bottom: 2px solid rgb(62,200,254);">secret</strong>
+        of this application!</h3>
+    </div>
+    <div class="counter-play">
+      <p (change)="counter()">{{count}}</p>
+    </div>
   </div>
 </header>
 <section>
   <div>
     <h3><button class="get-answer" (click)="getQuestion()">Click</button> to get the Question</h3>
-    <h2>{{getQuestion}}</h2>
-  <div class="input-button">
-    <app-input class="input" type="text"></app-input>
-    <button>Try</button>
-  </div>
+    <!-- se questions è definito allora mi prendi la domanda -->
+    <h2 *ngIf="questions">{{questions[0].question}}</h2>
+    <div class="input-button">
+      <app-input class="input" type="text" (change)="setValue($event)"></app-input>
+      <!-- LE FUNZIONI VOGLIONO LE TONDE P***************A -->
+      <button (click)="tryAnswer()">Try</button>
+    </div>
   </div>
 </section>
 <footer>

@@ -1,5 +1,5 @@
-export interface IQuestions {
-  IQuestions: IQuestions[];
+// i modelli si nominano al singolare
+export interface IQuestion {
   category: string;
   id: string;
   correctAnswer: string;

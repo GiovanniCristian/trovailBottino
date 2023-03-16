@@ -27,6 +27,22 @@ header {
       align-items: center;
       color: rgb(235, 235, 235);
     }
+    .counter-play {
+      margin: 50px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid rgb(62, 200, 254);
+      height: 50px;
+      width: 200px;
+      border-radius: 10px;
+        p {
+          color: rgb(250, 185, 23);
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 22px;
+        }
+    }
 }
 
 section {
