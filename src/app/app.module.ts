@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AnswerComponent } from './pages/answer/answer.component';
 import { InputComponent } from './shared/components/input/input.component';
+import { SecretPageComponent } from './pages/secret-page/secret-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AnswerComponent,
-    InputComponent
+    InputComponent,
+    SecretPageComponent
   ],
   imports: [
     BrowserModule,

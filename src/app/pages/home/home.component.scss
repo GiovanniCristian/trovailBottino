@@ -81,8 +81,20 @@ section {
   }
 }
 
-footer {
-  margin-top: 65px;
-  height: auto;
+.secret-page{
   text-align: center;
+  color: rgb(235, 235, 235);
+  margin-top: 60px;
+    span {
+      color: rgb(62, 200, 254);
+      text-transform: uppercase;
+      font-weight: bold;
+      border-bottom: 2px solid rgb(250, 185, 23);
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+        &:hover {
+          color: rgb(250, 185, 23);
+          border-bottom: 2px solid rgb(62,200,254);
+        }
+    }
 }

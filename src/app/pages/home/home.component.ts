@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit , OnDestroy {
   count : number = 0;
   counter(): any{
     if(this.questions && this.text.trim().toLowerCase() === this.questions[0].correctAnswer.trim().toLowerCase()){
-      this.count++
+      return this.count++
     } else {this.count = 0}
   };
 
