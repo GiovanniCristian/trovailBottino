@@ -14,5 +14,4 @@ export class AuthGuard implements CanActivate {
     state: RouterStateSnapshot){
     return this.authservice.showSecretPage();
   }
-
 }

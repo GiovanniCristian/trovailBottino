@@ -5,12 +5,11 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  fiveAnswers = false;
-
   constructor() { }
 
-  showSecretPage(){
-    return this.fiveAnswers
-  }
-
+  showSecretPage() {
+    // richiamo i dati del local storage per dire che se count arriva a 5 allora devi settare
+    // la variabile fiveAnswer a true
+    return (localStorage.getItem('countRightAnswers') === '5')
+  };
 }
